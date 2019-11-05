@@ -1,22 +1,13 @@
 {
-  "private": true,
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "build": "gridsome build"
   },
   "dependencies": {
-    "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.4.0",
     "animate.css": "^3.7.2",
-    "apollo-server-lambda": "^2.9.7",
-    "eslint-plugin-ava": "^9.0.0",
-    "gridsome": "^0.7.9",
-    "gridsome-plugin-netlify-cms": "^1.0.9",
-    "gridsome-plugin-netlify-cms-paths": "^0.3.0",
+    "gridsome": "^0.7.8",
     "lodash": "^4.17.15",
-    "netlify-cms": "^2.9.7",
-    "netlify-lambda": "^1.6.3",
     "prismjs": "^1.17.1",
     "vue-prism-editor": "^0.3.0"
   },
