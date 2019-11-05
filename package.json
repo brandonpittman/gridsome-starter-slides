@@ -6,12 +6,12 @@
     "build": "gridsome build"
   },
   "dependencies": {
-    "@gridsome/source-filesystem": "^0.6.1",
-    "@gridsome/transformer-remark": "^0.3.4",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.4.0",
     "animate.css": "^3.7.2",
-    "apollo-server-lambda": "^2.9.5",
+    "apollo-server-lambda": "^2.9.7",
     "eslint-plugin-ava": "^9.0.0",
-    "gridsome": "^0.7.7",
+    "gridsome": "^0.7.9",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-netlify-cms-paths": "^0.3.0",
     "lodash": "^4.17.15",
@@ -21,17 +21,17 @@
     "vue-prism-editor": "^0.3.0"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-xo": "^0.27.1",
+    "eslint": "^6.6.0",
+    "eslint-config-xo": "^0.27.2",
     "eslint-plugin-graphql": "^3.1.0",
-    "eslint-plugin-gridsome": "^1.3.2",
+    "eslint-plugin-gridsome": "^1.4.0",
     "eslint-plugin-vue": "^5.2.3",
-    "gridsome-plugin-base-components": "0.0.9",
+    "gridsome-plugin-base-components": "0.0.12",
     "gridsome-plugin-svg": "0.0.10",
-    "gridsome-plugin-tailwindcss": "^2.2.26",
-    "stylelint": "^11.0.0",
+    "gridsome-plugin-tailwindcss": "^2.2.27",
+    "stylelint": "^11.1.1",
     "stylelint-config-standard": "^19.0.0",
-    "tailwindcss-plugin-fancy": "0.0.12",
+    "tailwindcss-plugin-fancy": "0.0.20",
     "xo": "^0.25.3"
   }
 }
