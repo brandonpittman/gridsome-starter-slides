@@ -1,0 +1,106 @@
+<template>
+  <Layout
+    :theme="theme"
+    :invert="invert"
+  >
+    <div class="flex h-full w-full -mx-4">
+      <div class="relative h-full w-1/2 px-4">
+        <prism-editor
+          v-model="example"
+          :language="language"
+          class="bg-gray-800 h-full text-xs rounded shadow overflow-y-scroll focus:outline-none"
+        />
+
+        <button
+          @click="example = initialData"
+          class="absolute bg-gray-600 bottom-0 leading-normal mr-6 mb-2 h-8 w-8 right-0 rounded-full text-gray-200 text-xs focus:outline-none"
+        >
+          &times;
+        </button>
+      </div>
+
+      <div class="w-1/2">
+        <div
+          v-if="language === 'js'"
+          v-html="
+            `<pre class='h-full w-full flex items-center justify-center'><code>` +
+              evaluated +
+              `</code></pre>`
+          "
+          class="bg-gray-800 text-gray-200 w-full h-full rounded shadow flex
+				justify-center items-center"
+        />
+        <div
+          v-else
+          v-html="example"
+          class="bg-gray-200 text-gray-800 w-full h-full rounded shadow"
+        />
+      </div>
+    </div>
+  </Layout>
+</template>
+
+<script>
+import 'prismjs';
+import '@/assets/css/prism-night-owl.css';
+import PrismEditor from 'vue-prism-editor';
+import _ from 'lodash';
+
+export default {
+	components: {
+		PrismEditor
+	},
+	props: {
+		theme: {
+			type: String,
+			default: 'blue'
+		},
+		invert: {
+			type: Boolean
+		},
+		initialData: {
+			type: String,
+			default: ''
+		},
+		language: {
+			default: 'vue',
+			type: String
+		}
+	},
+	data() {
+		return {
+			example: this.initialData,
+			evaluated: ''
+		};
+	},
+	computed: {},
+	watch: {
+		example() {
+			this.debounced();
+		}
+	},
+	created() {
+		this.debounced = _.debounce(this.evaluate, 300);
+	},
+	methods: {
+		evaluate() {
+			try {
+			// eslint-disable-next-line no-eval
+				this.evaluated = eval(this.example);
+			} catch {
+				this.evaluated = 'Oops, something went wrong.';
+			}
+		}
+	}
+};
+</script>
+
+<style scoped>
+::-webkit-scrollbar {
+	display: none;
+}
+
+pre {
+	min-height: 100%;
+}
+</style>
