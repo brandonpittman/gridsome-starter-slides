@@ -1,5 +1,5 @@
 <template>
-  <ul class="py-4 w-full max-w-sm mx-auto">
+  <ul class="py-4 mx-auto">
     <slot />
   </ul>
 </template>

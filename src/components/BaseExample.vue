@@ -5,27 +5,28 @@
   >
     <div
       class="w-full"
-      style="height: 50%"
+      style="height: 50%;"
     >
+      <!-- eslint-disable next line vue/no-v-html -->
       <div
         v-if="language === 'js'"
+        class="bg-gray-800 text-gray-200 w-full h-full rounded shadow flex
+        justify-center items-center"
         v-html="
           `<pre class='h-full w-full flex items-center justify-center'><code>` +
             evaluated +
             `</code></pre>`
         "
-        class="bg-gray-800 text-gray-200 w-full h-full rounded shadow flex
-        justify-center items-center"
       />
       <div
         v-else
-        v-html="example"
         class="bg-gray-200 text-gray-800 w-full h-full rounded shadow"
+        v-html="example"
       />
     </div>
 
     <div
-      style="height: 50%"
+      style="height: 50%;"
       class="relative h-full w-full pb-1"
     >
       <prism-editor
@@ -36,8 +37,8 @@
       />
 
       <button
-        @click="example = initialData"
         class="absolute bg-gray-600 bottom-0 leading-normal mr-2 mb-2 h-8 w-8 right-0 rounded-full text-gray-200 text-xs focus:outline-none"
+        @click="example = initialData"
       >
         &times;
       </button>
@@ -100,10 +101,10 @@ export default {
 
 <style scoped>
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 pre {
-	min-height: 100%;
+  min-height: 100%;
 }
 </style>

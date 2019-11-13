@@ -1,24 +1,19 @@
 <template>
-  <Layout
-    :theme="theme"
-    :invert="invert"
-  >
-    <div class="relative w-full h-full pt-1 pb-2">
-      <prism-editor
-        v-model="example"
-        :language="language"
-        class="bg-gray-800 h-full text-xs rounded shadow overflow-y-scroll
-    p-1 focus:outline-none"
-      />
+  <div class="relative mx-auto p-8 w-full max-w-2xl">
+    <prism-editor
+      v-model="example"
+      :language="language"
+      :line-numbers="true"
+      class="bg-gray-800 h-full rounded shadow overflow-y-scroll p-1 focus:outline-none"
+    />
 
-      <button
-        @click="example = initialData"
-        class="absolute bg-gray-600 bottom-0 leading-normal mr-2 mb-4 h-8 w-8 right-0 rounded-full text-gray-200 text-xs focus:outline-none"
-      >
-        &times;
-      </button>
-    </div>
-  </Layout>
+    <button
+      class="absolute bg-gray-600 bottom-0 leading-normal mr-12 mb-12 h-8 w-8 right-0 rounded-full text-gray-200 text-xs focus:outline-none"
+      @click="example = initialData"
+    >
+      &times;
+    </button>
+  </div>
 </template>
 
 <script>
@@ -31,10 +26,14 @@ export default {
 		PrismEditor
 	},
 	props: {
-		initialData: {},
-		theme: {},
-		invert: {},
-		language: {default: 'vue'}
+		initialData: {
+			type: String,
+			default: ''
+		},
+		language: {
+			default: 'vue',
+			type: String
+		}
 	},
 	data() {
 		return {
@@ -43,21 +42,25 @@ export default {
 	},
 	computed: {
 		eval() {
-			return eval(this.example);
+			// eslint-disable-next-line
+			return eval(this.example); 
 		}
 	},
 	mounted() {
-		eval(this.initialData);
+		if (this.language === 'javascript') {
+			// eslint-disable-next-line
+			eval(this.initialData);
+		}
 	}
 };
 </script>
 
 <style>
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 pre {
-	min-height: 100%;
+  min-height: 100%;
 }
 </style>

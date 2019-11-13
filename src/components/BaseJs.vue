@@ -9,8 +9,8 @@
       />
 
       <button
-        @click="example = initialData"
         class="absolute bg-gray-600 bottom-0 leading-normal mr-2 mb-2 h-8 w-8 right-0 rounded-full text-gray-200 text-xs focus:outline-none"
+        @click="example = initialData"
       >
         &times;
       </button>
@@ -38,9 +38,10 @@ export default {
 
 <style>
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
+
 pre {
-	min-height: 100%;
+  min-height: 100%;
 }
 </style>
