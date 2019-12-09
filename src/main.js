@@ -8,7 +8,7 @@ import ImageFull from '~/layouts/ImageFull.vue';
 import 'tailwindcss/tailwind.css';
 import VuePrismEditor from 'vue-prism-editor';
 import 'vue-prism-editor/dist/VuePrismEditor.css'; // Import the styles
-import 'animate.css'
+import 'animate.css';
 
 export default function (Vue, {router, head, isClient}) {
 	// Set default layout as a global component

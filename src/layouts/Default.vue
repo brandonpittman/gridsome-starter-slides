@@ -4,14 +4,9 @@
     class="p-4 h-screen flex flex-col w-full"
   >
     <BaseHeader />
-    <transition
-      name="fade"
-      appear
-    >
-      <main class="flex flex-col justify-center items-center flex-1 py-1">
-        <slot />
-      </main>
-    </transition>
+    <main class="flex flex-col justify-center items-center flex-1 py-1">
+      <slot />
+    </main>
     <BaseFooter />
   </div>
 </template>
@@ -40,9 +35,9 @@ export default {
 </script>
 
 <static-query>
-query {
-  metadata {
-    siteName
+  query {
+    metadata {
+      siteName
+    }
   }
-}
 </static-query>

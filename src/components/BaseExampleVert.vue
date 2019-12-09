@@ -9,8 +9,8 @@
       />
 
       <button
-        class="absolute bg-gray-600 bottom-0 leading-normal mr-8 mb-20 h-8 w-8 right-0 rounded-full text-gray-200 text-xs focus:outline-none"
         @click="example = initialData"
+        class="absolute bg-gray-600 bottom-0 leading-normal mr-8 mb-20 h-8 w-8 right-0 rounded-full text-gray-200 text-xs focus:outline-none"
       >
         &times;
       </button>
@@ -20,18 +20,18 @@
       <!-- eslint-disable next line vue/no-v-html -->
       <div
         v-if="language === 'js'"
-        class="bg-gray-800 text-gray-200 w-full h-full rounded shadow flex
-				justify-center items-center"
         v-html="
           `<pre class='h-full w-full flex items-center justify-center'><code>` +
             evaluated +
             `</code></pre>`
         "
+        class="bg-gray-800 text-gray-200 w-full h-full rounded shadow flex
+				justify-center items-center"
       />
       <div
         v-else
-        class="bg-gray-200 text-gray-800 w-full h-full rounded shadow"
         v-html="example"
+        class="bg-gray-200 text-gray-800 w-full h-full rounded shadow"
       />
     </div>
   </div>
@@ -78,9 +78,6 @@ export default {
 
 			return result;
 		}
-	},
-	mounted() {
-		window.R = require('rambdax');
 	},
 	methods: {
 		evaluate() {

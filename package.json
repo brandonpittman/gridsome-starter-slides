@@ -4,7 +4,9 @@
     "explore": "gridsome explore",
     "build": "gridsome build"
   },
+  "license": "MIT",
   "dependencies": {
+    "@gridsome/vue-remark": "^0.1.9",
     "animate.css": "^3.7.2",
     "gridsome": "^0.7.8",
     "lodash": "^4.17.15",
