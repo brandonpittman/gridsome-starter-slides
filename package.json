@@ -6,6 +6,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/vue-remark": "^0.1.9",
     "animate.css": "^3.7.2",
     "gridsome": "^0.7.8",

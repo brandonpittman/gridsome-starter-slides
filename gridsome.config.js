@@ -21,6 +21,11 @@ module.exports = {
 		{
 			use: '@gridsome/vue-remark',
 			options: {
+				remark: {
+					plugins: [
+						'@gridsome/remark-prismjs'
+					]
+				},
 				typeName: 'Slide',
 				baseDir: './slides',
 				pathPrefix: '/slides',

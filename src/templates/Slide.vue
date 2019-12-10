@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import '@/assets/css/prism-night-owl.css';
 export default {
 	computed: {
 		prevSlide() {
@@ -57,3 +58,9 @@ export default {
     }
   }
 </page-query>
+
+<style scoped>
+>>> pre {
+  @apply w-full rounded-lg shadow-lg bg-gray-800;
+}
+</style>
