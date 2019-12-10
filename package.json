@@ -9,6 +9,7 @@
     "gridsome": "^0.7.8",
     "lodash": "^4.17.15",
     "prismjs": "^1.17.1",
+    "rambdax": "^3.5.0",
     "vue-prism-editor": "^0.3.0"
   },
   "devDependencies": {
