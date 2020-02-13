@@ -9183,10 +9183,10 @@ quick-lru@^4.0.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
-rambdax@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/rambdax/-/rambdax-3.5.0.tgz#ed7edccf5be9290036e335d15ace311904a75936"
-  integrity sha512-hoDmCSIZl9S+HdsTRp7kNI0lSeQ1A9FkBvkhyR0+kfmTnWFbkS6u+uC+aXF5n7LXeIJOqu6ku4S7slCbz63IgQ==
+rambdax@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/rambdax/-/rambdax-3.6.0.tgz#fd2ad675ed90ae0f64188a1078f857f91070331c"
+  integrity sha512-00M2RgIHIvr5bzRu02qlPrRFg6uekUorvCmoK8ZQZt0Vl2rz+Y/EpfNL6Z6Fwh7kkNI40atT19J6pt6iJVoMQw==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"

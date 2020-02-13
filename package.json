@@ -10,7 +10,7 @@
     "lodash": "^4.17.15",
     "npm-check-updates": "^4.0.1",
     "prismjs": "^1.19.0",
-    "rambdax": "^3.5.0",
+    "rambdax": "^3.6.0",
     "vue-prism-editor": "^0.3.0"
   },
   "devDependencies": {
