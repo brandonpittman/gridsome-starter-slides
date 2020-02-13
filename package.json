@@ -12,6 +12,7 @@
     "prismjs": "^1.19.0",
     "rambdax": "^3.5.0",
     "vue-prism-editor": "^0.4.3"
+    "rambdax": "^3.6.0",
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -23,7 +24,7 @@
     "gridsome-plugin-svg": "0.0.10",
     "gridsome-plugin-tailwindcss": "^2.2.33",
     "stylelint": "^13.0.0",
-    "stylelint-config-standard": "^19.0.0",
+    "stylelint-config-standard": "^20.0.0",
     "tailwindcss-plugin-fancy": "1.0.7",
     "xo": "^0.25.3"
   }
